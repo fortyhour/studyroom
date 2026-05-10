@@ -1,0 +1,15 @@
+conda create -n room python=3.10
+pip install -r requirements.txt
+conda activate room
+
+cd backend
+python run.py
+# 或者
+python backend/run.py
+# 运行在 http://127.0.0.1:5000
+
+cd front
+npm install # 第一次
+npm run dev
+# 运行在 http://localhost:3000
+
