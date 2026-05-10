@@ -25,18 +25,30 @@
 
 ## 快速开始
 
-### 1. 后端启动
+### 1. 环境搭建
+```bash
+# 后端环境
+conda create -n room python=3.10
+pip install -r requirements.txt
+conda activate room
+# 前端环境
+cd front
+npm install
+```
+
+### 2. 后端启动
 ```bash
 cd backend
-pip install -r requirements.txt
 python run.py
+# 或
+python backend/run.py
+# 运行在 http://127.0.0.1:5000
 # 服务运行在 http://127.0.0.1:5000
 ```
 
-### 2. 前端启动
+### 3. 前端启动
 ```bash
 cd front
-npm install
 npm run dev
 # 服务运行在 http://localhost:3000
 # Vite 自动代理 /api 请求到后端 5000 端口
