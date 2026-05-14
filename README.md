@@ -42,7 +42,6 @@ cd backend
 python run.py
 # 或
 python backend/run.py
-# 运行在 http://127.0.0.1:5000
 # 服务运行在 http://127.0.0.1:5000
 ```
 
